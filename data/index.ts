@@ -76,7 +76,7 @@ export const navItems = [
       des: "Explore extensive collection of information about all movies, webseries and celebrity.",
       img: "/cinova.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://movie-app-gamma-snowy.vercel.app/",
+      link: "https://cinova-movie-app.vercel.app/",
     },
     {
       id: 2,
