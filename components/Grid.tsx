@@ -1,5 +1,6 @@
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import { gridItems, skillsFrontend,skillsBackend,libraries } from "@/data";
+import Image from "next/image";
 import { Fragment } from "react";
 import { FaReact } from "react-icons/fa";
 const Grid = () => {
@@ -18,9 +19,10 @@ const Grid = () => {
          <Fragment key={id}>
          <div className="flex items-center md:max-w-60 max-w-full gap-2">
            {/* <{img} className="md:w-10 w-5" /> */}
-           <img
+           <Image
              src={img}
              alt={title}
+             height={id === 4 || id === 5 ? 100 : 150}
              width={id === 4 || id === 5 ? 100 : 150}
              className={`w-6 ${!title?'md:w-16':'md:w-9'}`}
            />

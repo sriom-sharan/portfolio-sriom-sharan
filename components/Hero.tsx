@@ -70,7 +70,9 @@ const Hero = () => {
 
             <div className="flex-col gap-4 flex justify-center items-center">
               <div className="border-b-2  p-2 rounded-full border-purple">
-              <img
+              <Image
+              width={100}
+              height={100}
               alt="profile picture"
                 className="bg-gray-400 md:w-[500px] lg:w-[600px]   shadow-sm outline-x-purple w-72 brightness-90 contrast-100 saturate-100  rounded-full"
                 src="/profile.png"

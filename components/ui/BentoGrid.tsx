@@ -11,6 +11,7 @@ import { BackgroundGradientAnimation } from "./GradientBG";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../ui/MagicButton";
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -141,21 +142,22 @@ export const BentoGridItem = ({
 
           {/* Tech stack list div */}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-1 lg:gap-5 w-fit absolute top-2 -right-3 lg:-right-2">
+              <Image className="opacity-20 lg:opacity-55" src={'/techStack.svg'} width={300} height={300} alt="working on computer"/>
               {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-4 lg:pt-4">
+              {/* <div className="flex flex-col gap-2  md:gap-3 lg:gap-4 ">
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                    className="lg:py-4 lg:px-3 py-2 px-3  text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
                 ))}
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-              </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-4">
+              </div> */}
+              {/* <div className="flex flex-col gap-3 md:gap-3 lg:gap-4">
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
                 {rightLists.map((item, i) => (
                   <span
@@ -166,7 +168,7 @@ export const BentoGridItem = ({
                     {item}
                   </span>
                 ))}
-              </div>
+              </div> */}
             </div>
           )}
           {id === 6 && (
