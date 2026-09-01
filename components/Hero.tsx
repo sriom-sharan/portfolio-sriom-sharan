@@ -69,13 +69,13 @@ const Hero = () => {
             </div>
 
             <div className="flex-col gap-4 flex justify-center items-center">
-              <div className="border-b-2  p-2 rounded-full border-purple">
+              <div className="border-b-2 aspect-square p-2 flex justify-end rounded-full border-purple">
               <Image
-              width={300}
-              height={300}
+              width={400}
+              height={400}
               alt="profile picture"
-                className="bg-gray-400 md:w-[500px] lg:w-[600px]   shadow-sm outline-x-purple w-72 brightness-90 contrast-100 saturate-100  rounded-full"
-                src="/profile.png"
+                className="bg-gray-200/5 md:w-[550px]  lg:w-[650px]   shadow-sm outline-x-purple w-72 brightness-90 contrast-100 saturate-100  rounded-full"
+                src="/professional_no_BG.png"
                 />
                 </div>
 
