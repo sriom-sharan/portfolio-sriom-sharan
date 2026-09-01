@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
-        "build": "next build",             
+        "build": "next build",
         "build:pages": "GITHUB_PAGES=true next build",
         "start": "next start",
         "lint": "next lint",
@@ -29,8 +29,8 @@
         "react-lottie": "^1.2.4",
         "tailwind-merge": "^2.2.2",
         "tailwindcss-animate": "^1.0.7",
-        "three": "^0.163.0",
-        "three-globe": "^2.31.0",
+        "three": "^0.185.1",
+        "three-globe": "^2.45.2",
         "vercel": "^34.0.0"
     },
     "devDependencies": {
