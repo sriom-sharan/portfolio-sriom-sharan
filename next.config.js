@@ -1,9 +1,15 @@
-// next.config.js
-const isProd = process.env.NODE_ENV === 'production';
+const isPages = process.env.GITHUB_PAGES === "true";
 
 module.exports = {
-  basePath: isProd ? '/portfolio-sriom-sharan' : '',
+  output: isPages ? "export" : undefined,
+  basePath:  "" ,
   images: {
-    unoptimized: true,
+    unoptimized: isPages,
+    remotePatterns: [{
+        protocol: 'https',
+        hostname: 'img.icons8.com',
+        port: '',
+        pathname: '/**',
+      },]
   },
 };
