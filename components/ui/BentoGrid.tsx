@@ -1,8 +1,7 @@
 "use client"
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-
-import Lottie from "react-lottie";
+import { Lottie } from "lottie-react";
 
 import { cn } from "@/lib/utils";
 
@@ -12,6 +11,11 @@ import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../ui/MagicButton";
 import Image from "next/image";
+
+// const Lottie = dynamic(() => import("react-lottie"), {
+//   ssr: false,
+//   loading: () => <div className="h-[200px] w-[400px]" />,
+// });
 
 export const BentoGrid = ({
   className,
@@ -57,15 +61,6 @@ export const BentoGridItem = ({
   const rightLists = ["MongoDB ", "NodeJS", "Tailwind"];
 
   const [copied, setCopied] = useState(false);
-
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
 
   const handleCopy = () => {
     const text = "sriomsingh543@gmail.com";
@@ -182,7 +177,12 @@ export const BentoGridItem = ({
                   }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
+                <Lottie
+                  src={animationData}
+                  loop={copied}
+                  autoplay={copied}
+                  className="h-[200px] w-[400px]"
+                />
               </div>
 
               <MagicButton
