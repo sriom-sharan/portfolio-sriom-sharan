@@ -2,7 +2,7 @@ const isPages = process.env.GITHUB_PAGES === "true";
 
 module.exports = {
   output: isPages ? "export" : undefined,
-  basePath:  "" ,
+  basePath: isPages ? "/portfolio-sriom-sharan" : "",
   images: {
     unoptimized: isPages,
     remotePatterns: [{
