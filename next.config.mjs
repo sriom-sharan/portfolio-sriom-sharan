@@ -16,6 +16,7 @@ const nextConfig = {
     NEXT_PUBLIC_BASE_PATH: isGithubPages
       ? "/portfolio-sriom-sharan"
       : "",
+     },
   images: {
     unoptimized: isGithubPages,
 
